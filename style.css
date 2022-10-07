@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inter:wght@400;600&family=Noto+Sans+Mono:wght@300;400;500;600;700;800;900&family=Roboto:wght@300&family=Titillium+Web&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+a {
+  all: unset;
+}
+body {
+  background: rgb(117, 109, 255);
+  background: linear-gradient(90deg, rgba(117, 109, 255, 1) 0%, rgba(57, 57, 239, 0.5831466375612745) 35%, rgba(188, 56, 224, 1) 100%);
+}
+:root {
+  --fo-2xl: 6rem;
+  --fo-2l: 4rem;
+  --fo-l: 2.5rem;
+  --fo-s: 1.6rem;
+  --fo-ss: 1.3rem;
+  --fo-sss: 1rem;
+
+  --c-hard: #1746a2;
+  --bg-c: #5f9df7;
+  --wht-c: #fff;
+  --grn-c: #9cff2e;
+
+  --w-2xl: 800;
+  --w-xl: 600;
+  --w-2l: 500;
+  --w-l: 400;
+
+  --sm-box: 0 0 1rem 0.1rem var(--c-hard);
+  --parent-margin: 18rem auto 0 auto;
+  --parent-margin-bottom: 18rem auto 8rem auto;
+  --content-text-padding: 2.3rem auto;
+}
+
+/* header */
+
+.container {
+  height: 60%;
+}
+.container-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 20rem;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  width: 15%;
+}
+.logo img {
+  width: 100%;
+}
+.logo,
+.items {
+  font-size: var(--fo-s);
+}
+.items a {
+  padding: 0 2rem;
+  color: var(--wht-c);
+}
+.items a:hover {
+  color: rgb(251, 255, 70);
+  color: linear-gradient(87deg, rgba(251, 255, 70, 1) 3%, rgba(174, 239, 57, 1) 63%, rgba(120, 255, 34, 0.7708217075892857) 100%);
+}
+/* section -2 */
+.wrapper-content {
+  margin: var(--parent-margin);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.text-left {
+  width: 30%;
+  font-size: var(--fo-s);
+  font-weight: var(--w-2xl);
+  color: var(--wht-c);
+  padding-top: 2rem;
+}
+.btn-n-1 {
+  margin-top: 2rem;
+  height: 2rem;
+  border-radius: 30px;
+  border: none;
+  border-color: transparent;
+  background: rgb(251, 255, 70);
+  background: linear-gradient(87deg, rgba(251, 255, 70, 1) 3%, rgba(174, 239, 57, 1) 63%, rgba(120, 255, 34, 0.7708217075892857) 100%);
+}
+.btn-n-1:hover {
+  box-shadow: 0 0 1rem 0.1rem var(--grn-c);
+}
+.btn-n-1 a {
+  padding: 2rem;
+  font-size: var(--fo-ss);
+  font-weight: var(--w-xl);
+  color: var(--c-hard);
+}
+.img-right {
+  width: 40%;
+}
+.img-right img {
+  width: 100%;
+  height: auto;
+}
+.img-right img:hover {
+  box-shadow: 0 0 2rem 0.2rem var(--c-hard);
+}
+
+/* section-3 */
+
+.wrapper-content-sc-3 {
+  margin: var(--parent-margin);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.wrapper-card-1 {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card-1 {
+  display: grid;
+  width: 35%;
+  height: auto;
+  background-color: #ffffff52;
+  padding: 2rem 2.3rem 1.4rem 2.3rem;
+  margin-top: 0.4rem;
+  align-items: center;
+  border-radius: 5%;
+}
+.card-1:hover {
+  box-shadow: var(--sm-box);
+}
+.card-1 p:nth-child(1n) {
+  font-size: var(--fo-s);
+  font-weight: var(--w-l);
+  color: white;
+  margin-top: 0.4rem;
+}
+.card-1 p:nth-child(2n + 1) {
+  margin-top: 0.4rem;
+  font-size: var(--fo-sss);
+  color: rgba(255, 255, 255, 0.837);
+}
+.img-card {
+  width: 20%;
+}
+.img-card img {
+  border-radius: 30%;
+  width: 100%;
+  height: auto;
+}
+.right-text-sc-2 {
+  width: 30%;
+  color: var(--wht-c);
+}
+.right-text-sc-2 p:nth-child(1) {
+  font-size: var(--fo-l);
+  font-weight: var(--w-2xl);
+}
+.right-text-sc-2 p:nth-child(2) {
+  margin-top: 1.2rem;
+  font-size: var(--fo-ss);
+}
+
+/* section -4 */
+
+.wrapper-sc-4 {
+  margin: var(--parent-margin-bottom);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.img-sc-4 {
+  width: 40%;
+  gap: 20px;
+}
+.img-sc-4 img {
+  width: 100%;
+  height: 40rem;
+}
+.img-sc-4 img:hover {
+  box-shadow: 0 0 2rem 0.2rem var(--c-hard);
+}
+.text-sc-4 {
+  width: 30%;
+  color: var(--wht-c);
+}
+.text-sc-4 p:nth-child(1) {
+  font-size: var(--fo-l);
+  font-weight: var(--w-2xl);
+}
+.text-sc-4 p:nth-child(2) {
+  margin-top: 1.2rem;
+  font-size: var(--fo-ss);
+  font-weight: lighter;
+}
